@@ -1,0 +1,3 @@
+Platform : iOS
+Language : Objective-C
+Function : 以POST的方式批量传输图片到HTTP服务器.
