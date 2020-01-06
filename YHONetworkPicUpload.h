@@ -22,9 +22,9 @@ NSData *createPNGPicture(NSString *formBoundary, UIImage *image, NSString *name,
 
 @interface YHONetworkPicUpload : NSObject
 
-@property (nonatomic, strong) NSString *boundary;       //分割字符串
-@property (nonatomic, strong) NSDictionary *parameters; //携带的参数
-@property (nonatomic, strong) NSArray *pictures;        //封装好的图片的数据
+@property (nonatomic, copy) NSString *boundary;       //分割字符串
+@property (nonatomic, copy) NSDictionary *parameters; //携带的参数
+@property (nonatomic, copy) NSArray *pictures;        //封装好的图片的数据
 
 - (void)configRequest:(NSMutableURLRequest **)request;
 
